@@ -227,18 +227,18 @@ LOGIN_REQUIRED_REDIRECT_FIELD_NAME = 'show_login'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": 'buglegal-final-db',
-        'USER': 'root',
-        'HOST': 'localhost',        
-        'PASSWORD': '',
+        "NAME": 'chinna',
+        'USER': 'srikanth',
+        'HOST': 'aws-ecw.czys0sswcnod.ap-south-1.rds.amazonaws.com',        
+        'PASSWORD': 'Srikanth143',
         'PORT':'3306',
-        'OPTIONS': {
-                      "init_command": "SET foreign_key_checks = 0;",
-                      'charset' : 'utf8mb4',
-                      'sql_mode' : 'traditional',
-                      'use_unicode': True,
+       # 'OPTIONS': {
+                  #    "init_command": "SET foreign_key_checks = 0;",
+                  #    'charset' : 'utf8mb4',
+                   #   'sql_mode' : 'traditional',
+                   #   'use_unicode': True,
                     #   'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-                 },
+                # },
     }
     
     
