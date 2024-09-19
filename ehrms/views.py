@@ -1348,7 +1348,7 @@ def admincontrol(request):
 def addonauthentication(request):
     if request.method == "POST":
         user=authenticate(request,username=request.POST.get("email"),password=request.POST.get("password"))
-        if user is not None and user is not "multipleuser":
+        if user is not None and user != "multipleuser":
             request.session['email_2']=user.email;
             login(request,user)
             if user.user_type=="1":
