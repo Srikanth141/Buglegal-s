@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-65!wki4t(64h460c1er)wf*hemi67$&v(8pf90op6-vib&-^nr
 DEBUG = True
 CSRF_TRUSTED_ORIGINS = ['https://buglegal.com','https://dthrms.azurewebsites.net']
 
-ALLOWED_HOSTS = ['*', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 USE_X_FORWARDED_HOST = True
 ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
