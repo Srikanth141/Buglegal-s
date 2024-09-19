@@ -12,9 +12,9 @@ pipeline {
         stage('dev') {
             steps {
                 sh '''
-                terraform init
+                terraform init dev.tf
                 terraform plan -out=dev.tfplan
-                terraform apply dev.tdplan
+                terraform apply dev.tfplan
                 '''
             }
         }
